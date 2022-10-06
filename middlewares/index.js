@@ -1,4 +1,4 @@
-const isValidDate = (date) => !Number.isNaN(Date.parse(date));
+const isValidDate = (date) => !isNaN(new Date(date));
 
 module.exports = {
   paramSanitizier(req, res, next) {
